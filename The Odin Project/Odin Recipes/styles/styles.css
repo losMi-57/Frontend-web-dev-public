@@ -3,10 +3,10 @@
 	position: relative;
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
+	/* text-decoration: none; */
 	/* font-size: 16px; */
 	font-family: sans-serif;
-	color: black;
+	/* color: black; */
 }
 *,
 *::before,
