@@ -33,6 +33,18 @@ li {
 	src: url(../fonts/RobotoFlex\ GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
 }
 
+:root {
+	--bgc-1: #1f2937;
+	--bgc-2: white;
+	--bgc-3: #e5e7eb;
+
+	--fc-1: #f9faf8;
+	--fc-2: #e5e7eb;
+	--fc-3: #1f2937;
+
+	--btnc-1: #3882f6;
+}
+
 /*======================STYLES======================*/
 * {
 	font-family: "Roboto Flex";
@@ -42,4 +54,15 @@ li {
 .w-wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
+
+	height: 30px;
+}
+.bg-grey-1 {
+	background-color: var(--bgc-1);
+}
+.bg-white {
+	background-color: var(--bgc-2);
+}
+.bg-grey-2 {
+	background-color: var(--bgc-3);
 }
