@@ -280,3 +280,14 @@ li {
 	border: var(--bdc-2);
 }
 /*======================FOOTER======================*/
+.footer-section {
+	padding: 40px 0;
+}
+.f-copyright-text {
+	color: var(--fc-1);
+
+	font-size: 14px;
+	font-weight: 200;
+
+	text-align: center;
+}
