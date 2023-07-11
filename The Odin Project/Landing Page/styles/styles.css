@@ -214,7 +214,25 @@ li {
 	margin-top: 20px;
 }
 /*======================SECTION 3======================*/
+.main-section-3 {
+	max-width: 980px;
+}
+.main-section-3-quote {
+	color: var(--fc-3);
 
+	font-size: 36px;
+	font-style: italic;
+}
+.main-section-3-author {
+	color: var(--fc-3);
+
+	font-size: 18px;
+	font-weight: 700;
+
+	text-align: right;
+
+	margin-top: 10px;
+}
 /*======================SECTION 4======================*/
 
 /*======================FOOTER======================*/
