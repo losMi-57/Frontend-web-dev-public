@@ -37,6 +37,7 @@ li {
 	--bgc-1: #1f2937;
 	--bgc-2: white;
 	--bgc-3: #e5e7eb;
+	--bgc-4: #3882f6;
 
 	--fc-1: #f9faf8;
 	--fc-2: #e5e7eb;
@@ -44,8 +45,8 @@ li {
 
 	--btnc-1: #3882f6;
 
-	--bdc-1: #3882f6;
-	--bdc-2: #f9faf8;
+	--bdc-1: 2px solid #3882f6;
+	--bdc-2: 2px solid #f9faf8;
 }
 
 /*======================STYLES======================*/
@@ -63,6 +64,7 @@ li {
 	margin: 0 auto;
 	padding: 80px 30px;
 }
+
 .bg-grey-1 {
 	background-color: var(--bgc-1);
 }
@@ -154,7 +156,7 @@ li {
 	font-size: 18px;
 }
 .m-sign-in-1 {
-	border-color: var(--bdc-1);
+	border: var(--bdc-1);
 }
 
 /*======================SECTION 2======================*/
@@ -208,14 +210,20 @@ li {
 	color: var(--fc-3);
 
 	font-size: 18px;
+	font-weight: 200;
 
 	text-align: center;
 
 	margin-top: 20px;
 }
+
 /*======================SECTION 3======================*/
+
 .main-section-3 {
 	max-width: 980px;
+
+	margin: 0 auto;
+	padding: 80px 30px;
 }
 .main-section-3-quote {
 	color: var(--fc-3);
@@ -233,6 +241,42 @@ li {
 
 	margin-top: 10px;
 }
-/*======================SECTION 4======================*/
 
+/*======================SECTION 4======================*/
+.main-section-4 {
+	max-width: 1160px;
+}
+.main-section-4-blue {
+	background-color: var(--bgc-4);
+
+	border-radius: 10px;
+
+	max-width: 1100px;
+
+	margin: 0 auto;
+	padding: 40px 30px;
+}
+.main-section-4-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.main-section-4-text-1 {
+	color: var(--fc-1);
+
+	font-size: 18px;
+	font-weight: 700;
+
+	margin-bottom: 5px;
+}
+.main-section-4-text-2 {
+	color: var(--fc-1);
+
+	font-size: 18px;
+	font-weight: 200;
+}
+.m-sign-in-2 {
+	border: var(--bdc-2);
+}
 /*======================FOOTER======================*/
