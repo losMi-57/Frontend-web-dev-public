@@ -52,10 +52,9 @@ li {
 
 /* width-wrapper */
 .w-wrapper {
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
-
-	height: 30px;
+	padding: 0 30px;
 }
 .bg-grey-1 {
 	background-color: var(--bgc-1);
@@ -65,4 +64,25 @@ li {
 }
 .bg-grey-2 {
 	background-color: var(--bgc-3);
+}
+
+/*======================HEADER======================*/
+.header-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 20px 30px;
+}
+
+.h-logo {
+	height: 40px;
+}
+
+.h-links-c * {
+	color: var(--bgc-2);
+}
+.h-links-c {
+	display: flex;
+	gap: 20px;
 }
