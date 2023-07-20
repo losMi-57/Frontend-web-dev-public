@@ -1,0 +1,190 @@
+/*====================GLOBAL STYLES====================*/
+/*----------------------CSS RESET----------------------*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img {
+	object-fit: contain;
+}
+img,
+label,
+span {
+	display: block;
+}
+a {
+	display: inline-block;
+}
+
+/*----------------------COLOR PALETTE----------------------*/
+:root {
+	--accent-color-1: #00ad6aff;
+	--accent-color-2: #1fe374ff;
+
+	--neutral-color-1: #eafaf1ff;
+	--neutral-color-2: white;
+	--neutral-color-3: #f2f3f3ff;
+	--neutral-color-4: #fcfcfcff;
+	--neutral-color-5: #080c16ff;
+
+	--border-color-1: #00ad6aff;
+	--border-color-2: #d6dae5ff;
+
+	--text-color-1: #00ad6aff;
+	--text-color-2: white;
+	--text-color-3: #080c16ff;
+	--text-color-4: #464951ff;
+	--text-color-5: #062c27ff;
+	--text-color-6: #83858aff;
+	--text-color-7: #1fe374ff;
+
+	--text-color-hover-1: #062c27ff;
+	--text-color-hover-2: #a9aaae;
+
+	--btn-color-hover-1: #00ad6aff;
+	--btn-color-hover-2: #464951;
+}
+
+/*----------------------FONT PALETTE----------------------*/
+@font-face {
+	font-family: "Work Sans";
+	src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Work Sans";
+	src: url("../fonts/WorkSans-Italic-VariableFont_wght.ttf");
+	font-style: italic;
+}
+
+/*====================GLOBAL STYLES====================*/
+* {
+	font-family: "Work Sans";
+	color: var(--text-color-3);
+}
+body {
+	background-color: var(--neutral-color-1);
+}
+
+.btn-green-gradient {
+	display: inline-flex;
+	color: var(--text-color-5);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 27px;
+	padding: 16px;
+	background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+}
+.btn-green-gradient:hover {
+	transform: translate3d(5px, -5px, 0);
+}
+.btn-green-gradient::before {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	height: 5px;
+	width: 100%;
+	background-color: var(--btn-color-hover-2);
+}
+.btn-green-gradient:hover::before {
+	display: block;
+	bottom: -5px;
+	left: -5px;
+}
+.btn-green-gradient::after {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	height: 100%;
+	width: 5px;
+	bottom: -5px;
+	left: -5px;
+	background-color: var(--btn-color-hover-2);
+}
+.btn-green-gradient:hover::after {
+	display: block;
+	bottom: -5px;
+	left: -5px;
+}
+
+.btn-transparent {
+	display: inline-flex;
+	color: var(--text-color-1);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 4px 16px;
+	background-color: #00ab6a00;
+	border: 2px solid var(--accent-color-1);
+}
+.btn-transparent:hover {
+	transform: translate3d(5px, -5px, 0);
+}
+.btn-transparent::before {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	height: 5px;
+	width: calc(100% + 4px);
+	background-color: var(--accent-color-1);
+}
+.btn-transparent:hover::before {
+	display: block;
+	bottom: -7px;
+	left: -7px;
+}
+.btn-transparent::after {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: -1;
+	content: "";
+	/* height: 100%; */
+	height: calc(100% + 4px);
+	width: 5px;
+	background-color: var(--accent-color-1);
+}
+.btn-transparent:hover::after {
+	display: block;
+	bottom: -7px;
+	left: -7px;
+}
+
+.btn-green-light {
+	display: inline-flex;
+	color: var(--text-color-4);
+	background-color: var(--accent-color-2);
+	padding: 12px 32px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	transition: all 0.05s ease-in-out;
+}
+/* 
+.btn-green-light:hover {
+	color: var(--text-color-5);
+}
+ */
+
+/* 
+.btn-green-light:hover {
+	transform: scale(1.1);
+	transition: all 0.05s ease-in-out;
+}
+ */

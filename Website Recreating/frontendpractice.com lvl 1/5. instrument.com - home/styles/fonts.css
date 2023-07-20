@@ -1,0 +1,339 @@
+/*----------------------FONT PALETTE----------------------*/
+
+/*----------------------Monument Grotesk----------------------*/
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('../fonts/MonumentGrotesk-Bold.eot');
+    src: local('Monument Grotesk Bold'), local('../fonts/MonumentGrotesk-Bold'),
+        url('../fonts/MonumentGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Bold.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Italic.eot');
+    src: local('../fonts/Monument Grotesk Italic'), local('../fonts/MonumentGrotesk-Italic'),
+        url('../fonts/MonumentGrotesk-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Italic.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Italic.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('../fonts/MonumentGrotesk-Medium.eot');
+    src: local('../fonts/Monument Grotesk Medium'), local('../fonts/MonumentGrotesk-Medium'),
+        url('../fonts/MonumentGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Medium.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Semi-Mono';
+    src: url('../fonts/MonumentGrotesk-Semi-Mono.eot');
+    src: local('../fonts/Monument Grotesk Semi-Mono'), local('../fonts/MonumentGrotesk-Semi-Mono'),
+        url('../fonts/MonumentGrotesk-Semi-Mono.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Semi-Mono.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Semi-Mono.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('../fonts/MonumentGrotesk-Regular.eot');
+    src: local('../fonts/Monument Grotesk Regular'), local('../fonts/MonumentGrotesk-Regular'),
+        url('../fonts/MonumentGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Regular.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Mono';
+    src: url('../fonts/MonumentGrotesk-Mono.eot');
+    src: local('../fonts/Monument Grotesk Mono'), local('../fonts/MonumentGrotesk-Mono'),
+        url('../fonts/MonumentGrotesk-Mono.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-Mono.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-Mono.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('../fonts/MonumentGrotesk-BoldItalic.eot');
+    src: local('../fonts/Monument Grotesk Bold Italic'), local('../fonts/MonumentGrotesk-BoldItalic'),
+        url('../fonts/MonumentGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-BoldItalic.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-BoldItalic.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('../fonts/MonumentGrotesk-MediumItalic.eot');
+    src: local('../fonts/Monument Grotesk Medium Italic'), local('../fonts/MonumentGrotesk-MediumItalic'),
+        url('../fonts/MonumentGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MonumentGrotesk-MediumItalic.woff2') format('woff2'),
+        url('../fonts/MonumentGrotesk-MediumItalic.woff') format('woff'),
+        url('../fonts/MonumentGrotesk-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*----------------------Whyte----------------------*/
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Italic.eot');
+    src: local('fonts/Whyte Italic'), local('fonts/Whyte-Italic'),
+        url('../fonts/Whyte-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Italic.woff2') format('woff2'),
+        url('../fonts/Whyte-Italic.woff') format('woff'),
+        url('../fonts/Whyte-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/fonts/Whyte-ExtraLightItalic.eot');
+    src: local('fonts/Whyte ExtraLight Italic'), local('fonts/Whyte-ExtraLightItalic'),
+        url('../fonts/Whyte-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/Whyte-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Book';
+    src: url('../fonts/Whyte-Book.eot');
+    src: local('Whyte Book'), local('Whyte-Book'),
+        url('../fonts/Whyte-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Book.woff2') format('woff2'),
+        url('../fonts/Whyte-Book.woff') format('woff'),
+        url('../fonts/Whyte-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-HeavyItalic.eot');
+    src: local('Whyte Heavy Italic'), local('Whyte-HeavyItalic'),
+        url('../fonts/Whyte-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-HeavyItalic.woff') format('woff'),
+        url('../fonts/Whyte-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Regular.eot');
+    src: local('Whyte Regular'), local('Whyte-Regular'),
+        url('../fonts/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Regular.woff2') format('woff2'),
+        url('../fonts/Whyte-Regular.woff') format('woff'),
+        url('../fonts/Whyte-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Super';
+    src: url('../fonts/Whyte-Super.eot');
+    src: local('Whyte Super'), local('Whyte-Super'),
+        url('../fonts/Whyte-Super.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Super.woff2') format('woff2'),
+        url('../fonts/Whyte-Super.woff') format('woff'),
+        url('../fonts/Whyte-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-LightItalic.eot');
+    src: local('Whyte Light Italic'), local('Whyte-LightItalic'),
+        url('../fonts/Whyte-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-LightItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-LightItalic.woff') format('woff'),
+        url('../fonts/Whyte-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Book';
+    src: url('../fonts/Whyte-BookItalic.eot');
+    src: local('Whyte Book Italic'), local('Whyte-BookItalic'),
+        url('../fonts/Whyte-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-BookItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-BookItalic.woff') format('woff'),
+        url('../fonts/Whyte-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Heavy.eot');
+    src: local('Whyte Heavy'), local('Whyte-Heavy'),
+        url('../fonts/Whyte-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Heavy.woff2') format('woff2'),
+        url('../fonts/Whyte-Heavy.woff') format('woff'),
+        url('../fonts/Whyte-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Super';
+    src: url('../fonts/Whyte-SuperItalic.eot');
+    src: local('Whyte Super Italic'), local('Whyte-SuperItalic'),
+        url('../fonts/Whyte-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-SuperItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-SuperItalic.woff') format('woff'),
+        url('../fonts/Whyte-SuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-MediumItalic.eot');
+    src: local('Whyte Medium Italic'), local('Whyte-MediumItalic'),
+        url('../fonts/Whyte-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-MediumItalic.woff') format('woff'),
+        url('../fonts/Whyte-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Bold.eot');
+    src: local('Whyte Bold'), local('Whyte-Bold'),
+        url('../fonts/Whyte-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Bold.woff2') format('woff2'),
+        url('../fonts/Whyte-Bold.woff') format('woff'),
+        url('../fonts/Whyte-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Black.eot');
+    src: local('Whyte Black'), local('Whyte-Black'),
+        url('../fonts/Whyte-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Black.woff2') format('woff2'),
+        url('../fonts/Whyte-Black.woff') format('woff'),
+        url('../fonts/Whyte-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-BlackItalic.eot');
+    src: local('Whyte Black Italic'), local('Whyte-BlackItalic'),
+        url('../fonts/Whyte-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-BlackItalic.woff') format('woff'),
+        url('../fonts/Whyte-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-ExtraLight.eot');
+    src: local('Whyte ExtraLight'), local('Whyte-ExtraLight'),
+        url('../fonts/Whyte-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Whyte-ExtraLight.woff') format('woff'),
+        url('../fonts/Whyte-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Light.eot');
+    src: local('Whyte Light'), local('Whyte-Light'),
+        url('../fonts/Whyte-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Light.woff2') format('woff2'),
+        url('../fonts/Whyte-Light.woff') format('woff'),
+        url('../fonts/Whyte-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Medium.eot');
+    src: local('Whyte Medium'), local('Whyte-Medium'),
+        url('../fonts/Whyte-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Medium.woff2') format('woff2'),
+        url('../fonts/Whyte-Medium.woff') format('woff'),
+        url('../fonts/Whyte-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-BoldItalic.eot');
+    src: local('Whyte Bold Italic'), local('Whyte-BoldItalic'),
+        url('../fonts/Whyte-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-BoldItalic.woff') format('woff'),
+        url('../fonts/Whyte-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-ThinItalic.eot');
+    src: local('Whyte Thin Italic'), local('Whyte-ThinItalic'),
+        url('../fonts/Whyte-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Whyte-ThinItalic.woff') format('woff'),
+        url('../fonts/Whyte-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Thin.eot');
+    src: local('Whyte Thin'), local('Whyte-Thin'),
+        url('../fonts/Whyte-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whyte-Thin.woff2') format('woff2'),
+        url('../fonts/Whyte-Thin.woff') format('woff'),
+        url('../fonts/Whyte-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}

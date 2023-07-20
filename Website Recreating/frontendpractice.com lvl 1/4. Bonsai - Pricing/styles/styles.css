@@ -1,0 +1,166 @@
+/*====================GLOBAL STYLES====================*/
+
+/*----------------------CSS RESET----------------------*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img {
+	object-fit: contain;
+}
+img,
+label,
+span {
+	display: block;
+}
+
+/*----------------------COLOR PALETTE----------------------*/
+:root {
+	--accent-color-1: #00b289ff;
+	--accent-color-2: #00a37e;
+
+	--neutral-color-1: #f2faffff;
+	--neutral-color-2: #fff;
+	--neutral-color-3: #fbfcffff;
+	--neutral-color-4: #ddd;
+
+	--neutral-color-hover-1: #fcfcfcff;
+	--neutral-color-hover-2: #fafafaff;
+
+	--border-color-1: #c3c3c3ff;
+	--border-color-2: #e5e5e5ff;
+	--border-color-3: #d6d7e3ff;
+
+	--font-color-primary-1: #292a2d;
+	--font-color-primary-2: #4c525a;
+
+	--font-color-light-1: #4d4d4d;
+	--font-color-light-2: #6d6d6d;
+
+	--font-color-hover-1: #0d0d14;
+}
+
+/*----------------------FONT PALETTE----------------------*/
+@font-face {
+	font-family: "Amerigo BT";
+	src: url("../fonts/Amerigo\ BT.ttf");
+}
+@font-face {
+	font-family: "Proxima Nova Alt Light";
+	src: url("../fonts/Proxima\ Nova\ Alt\ Light.otf");
+}
+@font-face {
+	font-family: "Proxima Nova Alt Regular";
+	src: url("../fonts/Proxima\ Nova\ Alt\ Regular.otf");
+}
+@font-face {
+	font-family: "Proxima Nova Alt SemiBold";
+	src: url("../fonts/Proxima\ Nova\ Alt\ Semibold.otf");
+}
+@font-face {
+	font-family: "Proxima Nova SemiBold";
+	src: url("../fonts/Proxima\ Nova\ Semibold.otf");
+}
+@font-face {
+	font-family: "Proxima Nova Bold";
+	src: url("../fonts/Proxima\ Nova\ Alt\ Bold.otf");
+}
+
+:root {
+	--font-primary: "Amerigo BT", sans-serif;
+	--font-secondary-l: "Proxima Nova Alt Light", sans-serif;
+	--font-secondary-r: "Proxima Nova Alt Regular", sans-serif;
+	--font-secondary-sb: "Proxima Nova Alt SemiBold", sans-serif;
+	--font-secondary-b: "Proxima Nova SemiBold", sans-serif;
+	--font-secondary-bb: "Proxima Nova Bold", sans-serif;
+}
+
+/*====================GLOBAL STYLES====================*/
+
+* {
+	font-family: var(--font-secondary-r);
+}
+body {
+	/* width: 100vw; */
+	height: 100vh;
+}
+.bg {
+	z-index: -10;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.background-rect {
+	background-color: var(--neutral-color-1);
+	position: absolute;
+	left: 0;
+	top: -1050px;
+	margin-inline: auto;
+	width: 2000px;
+	height: 1500px;
+	transform: rotate(-23deg);
+	border-radius: 6.6%;
+}
+header {
+	z-index: 10;
+	position: fixed;
+
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.h-logo-1 {
+	width: 150px;
+}
+.btn-white {
+	border-radius: 4px;
+	color: var(--accent-color-1);
+	background-color: var(--neutral-color-2);
+	border: 1px solid var(--accent-color-1);
+}
+.btn-white:hover {
+	color: var(--neutral-color-2);
+	background-color: var(--accent-color-1);
+	border: 1px solid var(--accent-color-1);
+}
+.btn-green {
+	border-radius: 4px;
+	color: var(--neutral-color-2);
+	background-color: var(--accent-color-1);
+	border: 1px solid var(--accent-color-1);
+}
+.btn-green:hover {
+	background-color: var(--accent-color-2);
+	border: 1px solid var(--accent-color-2);
+}
+main {
+	width: 100%;
+	padding-top: 84px;
+
+	/* box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5); */
+	/* background-image: url("../images/bg-img.jpg");
+	background-size: cover; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+	.background-rect {
+		left: 8%;
+	}
+	main {
+		padding-top: 78px;
+	}
+}

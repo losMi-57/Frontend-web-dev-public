@@ -1,0 +1,205 @@
+/*
+@media screen and (min-width: 481px) {} Phones
+@media screen and (min-width: 769px) {} Tablets
+@media screen and (min-width: 1025px) {} Larger tablets
+@media screen and (min-width: 1921px) {} Up to FHD monitors
+@media screen and (min-width: 7681px) {} Up to 8k monitors
+*/
+
+/*====================GLOBAL STYLES====================*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: Roboto, sans-serif;
+	list-style-type: none;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+
+h1,
+h2,
+footer a {
+	font-size: 18px;
+}
+.issue p,
+.issue a {
+	font-size: 15px;
+}
+.issue h2,
+.issue a,
+.issue p {
+	margin-bottom: 18px;
+}
+.issue a:hover {
+	text-decoration: underline;
+}
+.issue-6 a {
+	color: #e568acff;
+}
+
+.issue-5 a,
+.issue-4 a,
+.issue-3 a,
+.issue-2 a,
+.issue-1 a {
+	color: rgb(151, 151, 151);
+	/* color: #fff; */
+}
+
+footer p,
+footer a {
+	color: black;
+}
+.footer-copyright,
+.footer-copyright a {
+	font-size: 12px;
+}
+.footer-ppolicy,
+.footer-contact {
+	margin-bottom: 50px;
+}
+.footer-copyright a,
+.footer-ppolicy {
+	text-decoration: underline;
+}
+.footer-copyright a:hover,
+.footer-ppolicy:hover {
+	text-decoration: none;
+}
+.footer-contact:hover {
+	text-decoration: underline;
+}
+/*====================GLOBAL STYLES====================*/
+
+/*====================HEADER====================*/
+header img {
+	object-fit: contain;
+	padding: 20px 0 0 13px;
+	width: 165px;
+}
+@media screen and (min-width: 769px) {
+	header img {
+		width: 270px;
+	}
+}
+/*====================HEADER====================*/
+
+/*====================MAIN====================*/
+.issue {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 80%;
+	height: 930px;
+	margin-inline: auto;
+}
+.issue img {
+	object-fit: contain;
+	width: 100%;
+}
+.issue-1 p {
+	text-align: center; /*not aligning horizontally when there are too many words...*/
+	line-height: 150%;
+}
+@media screen and (min-width: 540px) {
+	.issue img {
+		width: 420px;
+	}
+}
+@media screen and (max-height: 650px) {
+	.issue {
+		height: 650px;
+	}
+}
+/*====================MAIN====================*/
+
+/*====================FOOTER====================*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-inline: 15px;
+}
+footer h1 {
+	margin-bottom: 8px;
+	text-align: center;
+	line-height: 150%;
+}
+.footer-copyright {
+	margin-bottom: 30px;
+}
+.footer-jumplist {
+	display: none;
+}
+@media screen and (min-width: 769px) {
+	footer {
+		display: block;
+	}
+	footer h1 {
+		text-align: start;
+		width: 25%;
+	}
+	.footer-ppolicy,
+	.footer-contact {
+		padding-bottom: 18px;
+		margin: 0;
+	}
+	.footer-contact {
+		position: absolute;
+		right: 0;
+	}
+}
+@media screen and (min-width: 1025px) {
+	header img,
+	footer h1,
+	.footer-copyright,
+	.footer-ppolicy,
+	.footer-contact,
+	.footer-jumplist {
+		position: fixed;
+	}
+	header img {
+		top: 0;
+		left: 0;
+	}
+	footer h1,
+	.footer-copyright,
+	.footer-ppolicy {
+		left: 0;
+		bottom: 0;
+		margin-left: 15px;
+	}
+	footer h1 {
+		margin-bottom: 92px;
+	}
+	.footer-copyright {
+		margin-bottom: 70px;
+	}
+	.footer-ppolicy {
+		padding: 0;
+		margin-bottom: 18px;
+	}
+	.footer-contact {
+		right: 0;
+		top: 0;
+		margin: 18px 15px;
+	}
+	.footer-jumplist {
+		display: block;
+		right: 0;
+		bottom: 0;
+		margin: 18px 15px;
+	}
+	.footer-jumplist li {
+		line-height: 170%;
+	}
+}
+/*====================FOOTER====================*/

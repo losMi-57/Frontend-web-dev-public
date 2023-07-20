@@ -1,0 +1,193 @@
+/*====================GLOBAL STYLES====================*/
+/*----------------------CSS RESET----------------------*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img,
+label,
+span {
+	display: block;
+}
+a {
+	display: inline-block;
+}
+img {
+	object-fit: contain;
+}
+li {
+	list-style-type: none;
+}
+
+/*----------------------COLOR PALETTE----------------------*/
+:root {
+	--accent-color-1: black;
+	--accent-color-2: white;
+
+	--font-color-1: white;
+	--font-color-2: black;
+	--font-color-3: #d3d3d3;
+
+	--hover-color-1: #ffffff7f;
+	--hover-color-2: #999999ff;
+	--hover-color-3: #262626ff;
+
+	--border-color-1: #404040ff;
+}
+
+/*====================GLOBAL STYLES====================*/
+* {
+	color: var(--font-color-1);
+	font-family: "Monument Grotesk Mono";
+}
+body {
+	background-color: var(--accent-color-1);
+}
+
+.height-div {
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	background-color: rgb(158, 158, 158);
+	width: 10px;
+	height: 2000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.height-div-strip {
+	width: 100px;
+	height: 5px;
+	background-color: rgb(100, 100, 100);
+}
+
+.current-page-bracket {
+	display: inline-flex;
+	align-items: center;
+}
+.current-page-bracket::before {
+	content: "[";
+	position: absolute;
+	left: -15px;
+	font-size: 16px;
+	color: var(--hover-color-1);
+}
+.current-page-bracket::after {
+	content: "]";
+	position: absolute;
+	right: -15px;
+	font-size: 16px;
+	color: var(--hover-color-1);
+}
+.hover-bracket {
+	display: inline-flex;
+	align-items: center;
+}
+.hover-bracket::before {
+	content: "[";
+	position: absolute;
+	left: -15px;
+	font-size: 16px;
+	color: rgba(240, 248, 255, 0);
+	transition: 0.3s ease-in-out;
+}
+.hover-bracket:hover::before {
+	color: var(--hover-color-1);
+}
+.hover-bracket::after {
+	content: "]";
+	position: absolute;
+	right: -15px;
+	font-size: 16px;
+	color: rgba(240, 248, 255, 0);
+	transition: 0.3s ease-in-out;
+}
+.hover-bracket:hover::after {
+	color: var(--hover-color-1);
+}
+.btn-white {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	padding: 0 24px;
+	border-radius: 22px;
+	background-color: var(--accent-color-2);
+	color: var(--font-color-2);
+	font-family: "Monument Grotesk Semi-Mono";
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	transition: 0.2s ease-in-out;
+}
+.btn-white:hover {
+	background-color: var(--hover-color-2);
+}
+.btn-black {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	padding: 0 24px;
+	border: 1px solid var(--border-color-1);
+	border-radius: 22px;
+	background-color: var(--accent-color-1);
+	color: var(--font-color-1);
+	font-family: "Monument Grotesk Semi-Mono";
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	transition: 0.2s ease-in-out;
+}
+.btn-black:hover {
+	color: var(--hover-color-2);
+	border: 1px solid var(--hover-color-3);
+}
+.btn-black path {
+	fill: var(--font-color-1);
+	transition: 0.2s ease-in-out;
+}
+.btn-black:hover path {
+	fill: var(--hover-color-2);
+}
+.btn-black-borderless {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	padding: 0 24px;
+	border-radius: 22px;
+	background-color: var(--accent-color-1);
+	color: var(--font-color-1);
+	font-family: "Monument Grotesk Semi-Mono";
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	transition: 0.2s ease-in-out;
+}
+.btn-black-borderless:hover {
+	color: var(--hover-color-2);
+}
+.btn-black-borderless path {
+	fill: var(--font-color-1);
+	transition: 0.2s ease-in-out;
+}
+.btn-black-borderless:hover path {
+	fill: var(--hover-color-2);
+}
+.btn-arrow {
+	display: flex;
+	margin-left: 15px;
+	margin-top: 2px;
+}

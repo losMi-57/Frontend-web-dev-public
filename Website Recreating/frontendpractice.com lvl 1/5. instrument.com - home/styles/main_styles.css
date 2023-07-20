@@ -1,0 +1,223 @@
+/*
+@media screen and (min-width: 481px) {} Phones
+@media screen and (min-width: 769px) {} Tablets
+@media screen and (min-width: 1025px) {} Larger tablets
+@media screen and (min-width: 1921px) {} Up to FHD monitors
+@media screen and (min-width: 7681px) {} Up to 8k monitors
+*/
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.m-container {
+	width: 100%;
+}
+.m-video-c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	aspect-ratio: 16/9;
+	background-color: #206ebeff;
+}
+.m-title-c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-top: calc(55px + 65 * (100vw - 320px) / 2180);
+	padding-inline: 8%;
+}
+.m-title-c h1 {
+	font-family: "Whyte";
+	font-size: calc(28px + 68 * (100vw - 320px) / 2180);
+	line-height: 117%;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 20px;
+}
+.m-description-c {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: calc(55px + 65 * (100vw - 320px) / 2180);
+	padding-inline: 8%;
+}
+.m-description-img {
+	object-fit: cover;
+	width: 100%;
+	aspect-ratio: 16/12;
+	margin-bottom: 40px;
+}
+.m-description-text span {
+	font-family: "Whyte";
+	font-size: calc(19px + 13 * (100vw - 320px) / 2180);
+	line-height: 150%;
+}
+.m-description-text a {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.m-subtitle-c {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	padding-top: calc(55px + 65 * (100vw - 320px) / 2180);
+	padding-inline: 8%;
+}
+.m-subtitle-c h2 {
+	font-family: "Whyte";
+	font-size: calc(28px + 44 * (100vw - 320px) / 2180);
+	font-weight: 400;
+	letter-spacing: -0.04em;
+	line-height: 117%;
+	margin-top: 20px;
+}
+.m-subtitle-c a {
+	margin-top: 40px;
+}
+.m-huge-link-c {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: calc(80px + 120 * (100vw - 320px) / 2180);
+}
+.m-huge-link {
+	margin-top: calc(80px + 120 * (100vw - 320px) / 2180);
+}
+.hl-img {
+	width: 100%;
+}
+.hl-text {
+	padding-inline: 8%;
+}
+.hl-text-1 {
+	margin-top: 20px;
+	font-family: "whyte";
+	font-size: calc(19px + 13 * (100vw - 320px) / 2180);
+	font-weight: 500;
+	letter-spacing: 0.1px;
+	line-height: 150%;
+	word-spacing: 0.4px;
+}
+.hl-text-2 {
+	margin-top: 20px;
+	font-family: "Monument Grotesk Semi-Mono";
+	font-size: 14px;
+	letter-spacing: 0.8px;
+	line-height: 171%;
+	max-width: 500px;
+}
+.m-logo-swap-c {
+	margin-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	height: calc(160px + 120 * (100vw - 320px) / 2180);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	overflow-x: scroll;
+
+	gap: 3px;
+}
+.m-logo-swap-img {
+	height: 100%;
+}
+@media screen and (min-width: 500px) {
+	.m-title-c {
+		padding-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	}
+	.m-video-c {
+		margin-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	}
+	.m-description-c {
+		padding-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	}
+	.m-description-text {
+		padding-inline: 8%;
+	}
+	.m-subtitle-c {
+		align-items: center;
+		padding-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	}
+	.m-subtitle-c h2 {
+		text-align: center;
+		max-width: 500px;
+	}
+	.m-huge-link-c {
+		padding-top: calc(160px + 120 * (100vw - 320px) / 2180);
+	}
+}
+@media screen and (max-width: 768px) {
+	main {
+		padding-top: 140px;
+	}
+}
+@media screen and (min-width: 769px) {
+	.m-huge-link-c {
+		padding-inline: 4%;
+	}
+	.hl-text {
+		padding-inline: unset;
+		display: flex;
+	}
+	.hl-text-1 {
+		width: 50%;
+	}
+	.hl-text-2 {
+		width: 50%;
+	}
+	.m-logo-swap-c {
+		width: 50%;
+		margin-inline: auto;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.hl-text-1 {
+		padding-right: 50px;
+	}
+}
+@media screen and (min-width: 1025px) {
+	.m-title-c h1 {
+		padding-inline: 8%;
+	}
+	.m-description-c {
+		padding-inline: 4%;
+	}
+	.m-description-c-normal {
+		flex-direction: row;
+	}
+	.m-description-c-reverse {
+		flex-direction: row-reverse;
+	}
+	.m-description-img {
+		width: 53%;
+		margin-bottom: 0;
+	}
+	.m-description-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 47%;
+	}
+	.m-description-text a {
+		margin-bottom: 0;
+	}
+	.m-subtitle-c h2 {
+		max-width: 55%;
+	}
+	.m-huge-link-c {
+		flex-direction: row;
+		gap: 4%;
+	}
+	.hl-text {
+		flex-direction: column;
+	}
+	.hl-text-1 {
+		width: 100%;
+	}
+	.hl-text-2 {
+		width: 100%;
+	}
+}

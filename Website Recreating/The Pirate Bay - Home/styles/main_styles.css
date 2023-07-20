@@ -1,0 +1,87 @@
+/*
+@media screen and (min-width: 481px) {} Phones
+@media screen and (min-width: 769px) {} Tablets
+@media screen and (min-width: 1025px) {} Larger tablets
+@media screen and (min-width: 1921px) {} Up to FHD monitors
+@media screen and (min-width: 7681px) {} Up to 8k monitors
+*/
+
+main {
+	max-width: 800px;
+	margin-inline: auto;
+	padding: 0 15px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.m-contents {
+	width: 100%;
+	margin-bottom: 65px;
+	padding: 10px;
+	background-color: var(--neutral-color-2);
+	border: 1px solid var(--border-color-4);
+	display: flex;
+	flex-direction: column;
+}
+.m-contents-title {
+	margin-bottom: 16px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.m-contents-link {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 21.5px;
+	text-decoration: none;
+}
+.m-contents-link:hover {
+	text-decoration: underline;
+}
+.m-contents-sublink {
+	margin-left: 24px;
+}
+
+.m-title {
+	color: var(--font-color-3);
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	margin-inline: auto;
+	margin-bottom: 20px;
+}
+.m-subtitle {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.m-subtitle-2 {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.m-paragraph {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.m-inline-link {
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.m-list {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.m-list-item {
+	list-style-type: disc;
+	font-size: 16px;
+	line-height: 20px;
+}
+.m-img {
+	width: 100%;
+	margin-bottom: 20px;
+}

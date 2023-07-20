@@ -1,0 +1,562 @@
+/*======================CSS RESET======================*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/* font-size: 16px; */
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img,
+label,
+span {
+	display: block;
+}
+a {
+	display: inline-block;
+}
+img {
+	object-fit: contain;
+}
+li {
+	list-style-type: none;
+}
+/*----------------------MISC STYLES----------------------*/
+
+/*----------------------FONT PALETTE----------------------*/
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordThin.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordThinItalic.ttf);
+	font-style: italic;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordExtraLight.ttf);
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordExtraLightItalic.ttf);
+	font-style: italic;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordLight.ttf);
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordLightItalic.ttf);
+	font-style: italic;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordRegular.ttf);
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordRegularItalic.ttf);
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordMedium.ttf);
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordMediumItalic.ttf);
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBold.ttf);
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlackItalic.ttf);
+	font-style: italic;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlack.ttf);
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlackItalic.ttf);
+	font-style: italic;
+	font-weight: 700;
+}
+:root {
+	--font-family-1: "Strawford", sans-serif;
+}
+
+/*----------------------COLOR PALETTE----------------------*/
+:root {
+	--bg-color-1: #013e39ff;
+	--bg-color-2: #c9fec6ff;
+	--bg-color-3: #feeecaff;
+	--bg-color-4: #fec1aeff;
+	--bg-color-5: #f6f8ffff;
+
+	--font-color-1: #013e39ff;
+	--font-color-2: #c9fec6ff;
+	--font-color-3: #339977ff;
+	--font-color-4: #f6f8ffff;
+	--font-color-5: #003e39ff;
+
+	--border-color-1: #013e39ff;
+	--border-color-1-hover-1: #f6f8ffff;
+	--border-color-2: #c9fec6ff;
+	--border-color-2-hover-1: #f6f8ffff;
+	--border-color-3: #003e39ff;
+
+	--btn-color-1: #013e39ff;
+	--btn-color-1-hover-1: #00554eff;
+	--btn-color-1-hover-2: #f6f8ffff;
+	--btn-color-2: #c9fec6ff;
+	--btn-color-2-hover-1: #f6f8ffff;
+	--btn-color-3: #f6f8ffff;
+
+	--icon-color-1: #013e39ff;
+	--icon-color-2: #c9fec6ff;
+	--icon-color-3: #f6f8ffff;
+	--icon-color-4: #feeecaff;
+
+	--box-shadow-1: 4px 4px 0 0 #003e39;
+	--box-shadow-1-hover-1: 23px 23px 64px -16px #393b6a0f;
+	--box-shadow-2: 0 90px 90px 10px #003e394d;
+	--box-shadow-3: 6px 6px 0 0 #003e39;
+	--box-shadow-3-hover-1: 23px 23px 64px -16px #393b6a0f;
+}
+/*======================ASSETS======================*/
+
+.border-radius-4px {
+	border-radius: 4px;
+}
+.border-radius-6px {
+	border-radius: 6px;
+}
+.border-radius-10px {
+	border-radius: 10px;
+}
+.border-radius-16px {
+	border-radius: 16px;
+}
+/* .border-radius-44px {
+	border-radius: 44px;
+} */
+.border-radius-50p {
+	border-radius: 50%;
+}
+
+.btn-white-box-shadow {
+	background-color: var(--bg-color-5);
+
+	border: 1px solid var(--border-color-1);
+
+	box-shadow: var(--box-shadow-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 14px;
+
+	cursor: pointer;
+}
+.btn-white-box-shadow-h {
+	background-color: var(--bg-color-5);
+
+	border: 1px solid var(--border-color-1);
+
+	box-shadow: var(--box-shadow-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 14px;
+
+	transition: box-shadow 0.3s ease;
+
+	cursor: pointer;
+}
+.btn-white-box-shadow-h:hover {
+	box-shadow: var(--box-shadow-1-hover-1);
+}
+
+.btn-white {
+	background-color: var(--btn-color-3);
+
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 12px 32px;
+
+	color: var(--font-color-1);
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: -0.32px;
+
+	cursor: pointer;
+
+	transition: border 0.3s;
+}
+.btn-white:hover {
+	border: 1px solid var(--border-color-1-hover-1);
+}
+
+.btn-green-1 {
+	background-color: var(--btn-color-1);
+
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 12px 32px;
+
+	color: var(--font-color-2);
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: -0.32px;
+
+	cursor: pointer;
+
+	transition: border 0.3s, background-color 0.3s;
+}
+.btn-green-1:hover {
+	background-color: var(--btn-color-1-hover-1);
+
+	border: 1px solid var(--btn-color-1-hover-1);
+}
+
+.btn-green-2 {
+	background-color: var(--btn-color-2);
+
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 12px 32px;
+
+	color: var(--font-color-1);
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: -0.32px;
+
+	cursor: pointer;
+
+	transition: border 0.3s, background-color 0.3s;
+}
+.btn-green-2:hover {
+	background-color: var(--btn-color-2-hover-1);
+
+	border: 1px solid var(--border-color-1-hover-1);
+}
+
+.btn-green-3 {
+	background-color: var(--btn-color-1);
+
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+
+	cursor: pointer;
+}
+
+/* arrow animation 1 */
+.btn-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+.btn-arrow svg {
+	fill: var(--btn-color-2);
+
+	width: 9px;
+	height: 9px;
+
+	transition: transform 0.5s ease-in-out;
+}
+.btn-arrow-rotator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn-arrow-rotator-1 {
+	transition: transform 0.1s ease-in;
+}
+.btn-arrow-rotator-2 {
+	transition: transform 0.1s ease-out;
+	transition-delay: 0.4s;
+}
+#btn-arrow:checked ~ .btn-arrow .btn-arrow-rotator-1 {
+	transform: rotateZ(-45deg);
+}
+#btn-arrow:checked ~ .btn-arrow .btn-arrow-rotator-2 {
+	transform: rotateZ(-45deg);
+}
+#btn-arrow:checked ~ .btn-arrow svg {
+	transform: rotateZ(270deg);
+}
+/* arrow animation 1 */
+
+/* arrow animation 2 */
+.btn-arrow-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+.btn-arrow-2 svg {
+	fill: var(--btn-color-2);
+
+	width: 9px;
+	height: 9px;
+
+	transition: transform 0.5s cubic-bezier(0.35, -0.75, 0.65, 1.75);
+}
+#btn-arrow-2:checked ~ .btn-arrow-2 svg {
+	transform: rotateZ(180deg);
+}
+/* arrow animation 2 */
+
+/* arrow animation 3 */
+.btn-arrow-3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+.btn-arrow-3 svg {
+	fill: var(--btn-color-2);
+
+	width: 9px;
+	height: 9px;
+}
+#btn-arrow-3:checked ~ .btn-arrow-3 svg {
+	animation: arrowUp 0.5s forwards ease-in-out;
+}
+@keyframes arrowUp {
+	0% {
+		transform: rotateZ(0);
+	}
+	15% {
+		transform: rotateZ(-25deg);
+	}
+	85% {
+		transform: rotateZ(205deg);
+	}
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+/* arrow animation 3 */
+
+.icon {
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 72px;
+	height: 72px;
+
+	box-shadow: var(--box-shadow-1);
+}
+.icon svg {
+	fill: var(--icon-color-1);
+
+	width: 50%;
+	height: 50%;
+}
+.icon-white {
+	background-color: var(--icon-color-3);
+}
+
+.icon-green {
+	background-color: var(--icon-color-2);
+}
+
+.icon-circle {
+	border: 1px solid var(--border-color-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	width: 50px;
+	height: 50px;
+
+	box-shadow: var(--box-shadow-1);
+}
+.icon-circle svg {
+	fill: var(--icon-color-1);
+
+	width: 50%;
+	height: 50%;
+}
+
+.icon-circle-white {
+	background-color: var(--icon-color-3);
+}
+
+.icon-circle-green {
+	background-color: var(--icon-color-2);
+}
+
+/*======================GLOBAL STYLES======================*/
+* {
+	color: var(--font-color-1);
+	font-family: var(--font-family-1);
+}
+
+#btn-arrow-d1:checked ~ .radio-toggle-off-hm-c .radio-toggle-off-hm-1,
+#btn-arrow-d2:checked ~ .radio-toggle-off-hm-c .radio-toggle-off-hm-2,
+#btn-arrow-d3:checked ~ .radio-toggle-off-hm-c .radio-toggle-off-hm-3,
+#btn-arrow-d4:checked ~ .radio-toggle-off-hm-c .radio-toggle-off-hm-4 {
+	z-index: auto;
+}
+.radio-toggle-off-hm {
+	/* background-color: aqua; */
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+
+	cursor: pointer;
+}
+
+#btn-arrow-d1-desktop:checked ~ .h-desktop-nav-c .radio-toggle-off-hd-c .radio-toggle-off-hd-1,
+#btn-arrow-d2-desktop:checked ~ .h-desktop-nav-c .radio-toggle-off-hd-c .radio-toggle-off-hd-2,
+#btn-arrow-d3-desktop:checked ~ .h-desktop-nav-c .radio-toggle-off-hd-c .radio-toggle-off-hd-3,
+#btn-arrow-d4-desktop:checked ~ .h-desktop-nav-c .radio-toggle-off-hd-c .radio-toggle-off-hd-4 {
+	z-index: auto;
+}
+.radio-toggle-off-hd {
+	/* background-color: aqua; */
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+
+	cursor: pointer;
+}
+
+#hth-toggle-1:checked ~ .m-hth-s2-card .radio-toggle-off-hth-c .radio-toggle-off-hth-1,
+#hth-toggle-2:checked ~ .m-hth-s2-card .radio-toggle-off-hth-c .radio-toggle-off-hth-2,
+#hth-toggle-3:checked ~ .m-hth-s2-card .radio-toggle-off-hth-c .radio-toggle-off-hth-3,
+#hth-toggle-4:checked ~ .m-hth-s2-card .radio-toggle-off-hth-c .radio-toggle-off-hth-4,
+#hth-toggle-5:checked ~ .m-hth-s2-card .radio-toggle-off-hth-c .radio-toggle-off-hth-5 {
+	z-index: auto;
+}
+.radio-toggle-off-hth {
+	/* background-color: aqua; */
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+
+	cursor: pointer;
+}
+
+.universal-wrapper {
+	width: 90%;
+	max-width: 1240px;
+
+	margin: 0 auto;
+}
+
+.universal-wrapper-2 {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.wrapper-dark-green {
+	background-color: var(--bg-color-1);
+}
+.wrapper-light-green {
+	background-color: var(--bg-color-2);
+	border-bottom: 1px solid var(--border-color-1);
+}
+.wrapper-light-orange {
+	background-color: var(--bg-color-3);
+	border-bottom: 1px solid var(--border-color-1);
+}
+.wrapper-grey {
+	background-color: var(--bg-color-5);
+}

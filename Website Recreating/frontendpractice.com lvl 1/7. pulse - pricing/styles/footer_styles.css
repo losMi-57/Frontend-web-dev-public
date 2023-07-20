@@ -1,0 +1,125 @@
+/*
+@media screen and (min-width: 481px) {} Phones
+@media screen and (min-width: 769px) {} Tablets
+@media screen and (min-width: 1025px) {} Larger tablets
+@media screen and (min-width: 1921px) {} Up to FHD monitors
+@media screen and (min-width: 7681px) {} Up to 8k monitors
+*/
+footer {
+	background-color: var(--neutral-color-5);
+}
+.f-container {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding: 32px 24px 96px 24px;
+}
+.f-signup-and-links {
+	margin-bottom: 44px;
+}
+.f-pulse {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.f-pulse-logo {
+	width: 128px;
+	margin-bottom: 16px;
+}
+.f-pulse-signup {
+	width: 100%;
+	padding: 16px 32px;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.f-links {
+	display: flex;
+	justify-content: space-between;
+}
+.f-links-c-split {
+	width: 28%;
+	display: flex;
+	flex-direction: column;
+}
+.f-links-title {
+	color: var(--text-color-2);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+.f-links-link {
+	color: var(--text-color-7);
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+.f-links-link:hover {
+	color: var(--text-color-2);
+}
+.f-copyright {
+	color: var(--text-color-6);
+	font-size: 12px;
+	line-height: 18px;
+}
+.f-copyright-link {
+	color: var(--text-color-6);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+.f-copyright-link:hover {
+	color: var(--text-color-hover-2);
+}
+@media screen and (min-width: 481px) {
+	.f-links-title {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.f-links-link {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+@media screen and (min-width: 769px) {
+	.f-container {
+		padding: 96px 24px 12px 24px;
+	}
+	.f-signup-and-links {
+		margin-bottom: 96px;
+	}
+	.f-pulse-logo {
+		width: 160px;
+	}
+	.f-pulse-signup {
+		width: unset;
+	}
+}
+@media screen and (min-width: 1025px) {
+	.f-signup-and-links {
+		display: flex;
+	}
+	.f-pulse {
+		width: 50%;
+		margin-bottom: unset;
+		gap: 32px;
+		align-items: flex-start;
+	}
+	.f-links {
+		width: 50%;
+	}
+	.f-links-c-split {
+		width: 31%;
+	}
+	.f-links-title {
+		margin-bottom: 16px;
+	}
+	.f-links-link {
+		margin-bottom: 16px;
+	}
+	.f-copyright-c {
+		padding-top: 12px;
+	}
+}

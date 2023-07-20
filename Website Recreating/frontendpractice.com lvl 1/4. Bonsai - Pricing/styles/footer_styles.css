@@ -1,0 +1,99 @@
+/*
+@media screen and (min-width: 481px) {} Phones
+@media screen and (min-width: 769px) {} Tablets
+@media screen and (min-width: 1025px) {} Larger tablets
+@media screen and (min-width: 1921px) {} Up to FHD monitors
+@media screen and (min-width: 7681px) {} Up to 8k monitors
+*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 20px 150px 20px;
+}
+.f-link-section {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.f-link-section a {
+	display: flex;
+	font-family: var(--font-secondary-l);
+	color: var(--font-color-light-2);
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 1px;
+}
+.f-link-section a:hover {
+	color: var(--font-color-hover-1);
+}
+.f-l-s-title {
+	font-size: 18px;
+	letter-spacing: 0.12px;
+	line-height: 24px;
+	margin-bottom: 25px;
+}
+.f-l-s-split {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+.f-link-special {
+	font-family: var(--font-secondary-l);
+	color: var(--accent-color-1);
+}
+.f-link-special:hover {
+	color: var(--accent-color-2);
+}
+.f-l-s-subtitle {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.f-l-s-title,
+.f-l-s-subtitle {
+	color: var(--font-color-primary-2);
+	font-family: var(--font-secondary-b);
+}
+.f-l-dropdown-container {
+	width: 100%;
+}
+.f-l-dropdown {
+	background-color: #f9f9fbff;
+	display: none;
+	margin-left: 10px;
+	box-shadow: 0 0 60px 0 rgba(2, 4, 69, 0.05);
+}
+.d-c-1:hover .dr-1,
+.d-c-2:hover .dr-2,
+.d-c-3:hover .dr-3,
+.d-c-4:hover .dr-4,
+.d-c-5:hover .dr-5,
+.d-c-6:hover .dr-6,
+.d-c-7:hover .dr-7 {
+	display: block;
+}
+.df-arrow-down {
+	width: 14px;
+	margin-left: 5px;
+}
+@media screen and (min-width: 769px) {
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-inline: auto;
+		padding: 100px 30px 100px 30px;
+		max-width: 950px;
+	}
+	.f-link-section {
+		width: 30%;
+	}
+}
+@media screen and (min-width: 1025px) {
+	footer {
+		padding: 100px 40px 150px 40px;
+	}
+	.f-l-s-title,
+	.f-l-s-subtitle {
+		font-size: 17px;
+	}
+}

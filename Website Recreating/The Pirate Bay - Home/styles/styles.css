@@ -1,0 +1,67 @@
+/*====================GLOBAL STYLES====================*/
+/*----------------------CSS RESET----------------------*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	/* text-decoration: none; */
+	font-size: 16px;
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img,
+label,
+span {
+	display: block;
+}
+a {
+	display: inline-block;
+}
+img {
+	object-fit: contain;
+}
+li {
+	list-style-type: none;
+}
+
+/*----------------------COLOR PALETTE----------------------*/
+:root {
+	--neutral-color-1: white;
+	--neutral-color-2: #f9f9f9ff;
+	--neutral-color-3: #e9e9edff;
+	--neutral-color-3-hover: #d0d0d7ff;
+	--neutral-color-4: #ffffe0ff;
+
+	--font-color-1: black;
+	--font-color-2: #009;
+	--font-color-2-hover: #3333adff;
+	--font-color-3: #2e75b5;
+	--font-color-4: #ffffe0ff;
+
+	--border-color-1: #4c4c4cff;
+	--border-color-2: #b2b2b2ff;
+	--border-color-3: #8f8f9dff;
+	--border-color-4: #aaaaaaff;
+}
+
+/*----------------------FONT PALETTE----------------------*/
+
+/*----------------------MISC STYLES----------------------*/
+
+/*====================GLOBAL STYLES====================*/
+* {
+	color: var(--font-color-1);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+.purple-link {
+	color: var(--font-color-2);
+}
+.purple-link:hover {
+	color: var(--font-color-2-hover);
+}
