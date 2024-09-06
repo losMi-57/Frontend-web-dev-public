@@ -1,0 +1,360 @@
+/*======================CSS RESET======================*/
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/* font-size: 16px; */
+	font-family: sans-serif;
+	color: black;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*box-sizing: content-box; is used by default*/
+}
+img,
+label,
+span {
+	display: block;
+}
+a {
+	display: inline-block;
+}
+img {
+	object-fit: contain;
+}
+li {
+	list-style-type: none;
+}
+/*----------------------MISC STYLES----------------------*/
+.height-div {
+	position: absolute;
+	left: 50%;
+	background-color: rgb(158, 158, 158);
+	width: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 250px;
+}
+.height-div-strip {
+	width: 100px;
+	height: 5px;
+	background-color: rgb(100, 100, 100);
+}
+
+/*=========FONT PALETTE=========*/
+:root {
+	--ff-1: "Strawford", sans-serif;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordThin.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordThinItalic.ttf);
+	font-style: italic;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordExtraLight.ttf);
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordExtraLightItalic.ttf);
+	font-style: italic;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordLight.ttf);
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordLightItalic.ttf);
+	font-style: italic;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordRegular.ttf);
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordRegularItalic.ttf);
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordMedium.ttf);
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordMediumItalic.ttf);
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBold.ttf);
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlackItalic.ttf);
+	font-style: italic;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlack.ttf);
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Strawford";
+	src: url(../fonts/Strawford/StrawfordBlackItalic.ttf);
+	font-style: italic;
+	font-weight: 700;
+}
+
+/* :root {
+	--ff-2: "", sans-serif;
+} */
+
+:root {
+	/* --fw-100: 100; */
+	/* --fw-200: 200; */
+	/* --fw-300: 300; */
+	--fw-400: 400;
+	--fw-500: 500;
+	/* --fw-600: 600; */
+	/* --fw-700: 700; */
+	/* --fw-800: 800; */
+	/* --fw-900: 900; */
+}
+
+/*=========COLOR PALETTE=========*/
+:root {
+	/*-----FONT COLOR-----*/
+	--fc-1: #013e39ff;
+	--fc-2: #c9fec6ff;
+	/* --fc-3: #fff; */
+	/* --fc-4: #fff; */
+	/* --fc-5: #fff; */
+
+	--fc-hover-1: #23743e;
+	--fc-hover-2: #43c9a1;
+	/* --fc-hover-3: #fff; */
+	/* --fc-hover-4: #fff; */
+	/* --fc-hover-5: #fff; */
+
+	/*-----BACKGROUND COLOR-----*/
+	--bgc-1: #013e39ff;
+	--bgc-2: #c9fec6ff;
+	/* --bgc-3: #fff; */
+	/* --bgc-4: #fff; */
+	/* --bgc-5: #fff; */
+	/* --bgc-6: #fff; */
+	/* --bgc-7: #fff; */
+	/* --bgc-8: #fff; */
+	/* --bgc-9: #fff; */
+	/* --bgc-10: #fff; */
+
+	--bgc-hover-1: #3f8882;
+	--bgc-hover-2: #0f680b;
+	/* --bgc-hover-3: #fff; */
+	/* --bgc-hover-4: #fff; */
+	/* --bgc-hover-5: #fff; */
+
+	/*-----BUTTON COLOR-----*/
+	--btnc-1: #013e39ff;
+	--btnc-2: #c9fec6ff;
+	/* --btnc-3: #fff; */
+	/* --btnc-4: #fff; */
+	/* --btnc-5: #fff; */
+
+	--btnc-hover-1: #013e1a;
+	--btnc-hover-2: #ecc6fe;
+	/* --btnc-hover-3: #fff; */
+	/* --btnc-hover-4: #fff; */
+	/* --btnc-hover-5: #fff; */
+
+	/*-----ICON COLOR-----*/
+	--ic-1: #013e39ff;
+	--ic-2: #c9fec6ff;
+	/* --ic-3: #fff; */
+	/* --ic-4: #fff; */
+	/* --ic-5: #fff; */
+
+	--ic-hover-1: #706a1b;
+	--ic-hover-2: #11790b;
+	/* --ic-hover-3: #fff; */
+	/* --ic-hover-4: #fff; */
+	/* --ic-hover-5: #fff; */
+
+	/*-----BOX SHADOWS-----*/
+	--box-shadow-1: 4px 4px 0 0 #003e39;
+	--box-shadow-2: 3px 5px 5px 1px #000000bf;
+	/* --box-shadow-3: 2px 4px 7px 3px #000000bf; */
+	/* --box-shadow-4: 2px 4px 7px 3px #000000bf; */
+	/* --box-shadow-5: 2px 4px 7px 3px #000000bf; */
+
+	--box-shadow-hover-1: 4px 5px 6px 3px #b4171791;
+	--box-shadow-hover-2: 4px 6px 6px 1px #1768b491;
+	/* --box-shadow-hover-3: 4px 4px 10px 1px #1796b491; */
+	/* --box-shadow-hover-4: 4px 4px 10px 1px #1796b491; */
+	/* --box-shadow-hover-5: 4px 4px 10px 1px #1796b491; */
+}
+
+:root {
+	/*-----BORDER-----*/
+	--border-1: 3px solid #013e39ff;
+	--border-2: 6px ridge #c9fec6ff;
+	/* --border-3: 1px solid #000; */
+	/* --border-4: 1px solid #000; */
+	/* --border-5: 1px solid #000; */
+
+	--border-hover-1: 4px dotted #1da59a;
+	--border-hover-2: 5px dashed #fedbc6;
+	/* --border-hover-3: #fff; */
+	/* --border-hover-4: #fff; */
+	/* --border-hover-5: #fff; */
+}
+:root {
+	/*-----BORDER RADIUS-----*/
+	--br-4px: 4px;
+	--br-6px: 6px;
+	--br-8px: 8px;
+	--br-10px: 10px;
+	--br-44px: 44px;
+	--br-50p: 50%;
+}
+/*======================ASSETS======================*/
+
+.btn-white-box-shadow {
+	border: var(--border-1);
+	border-radius: var(--br-6px);
+
+	box-shadow: var(--box-shadow-1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 14px;
+
+	cursor: pointer;
+
+	transition: box-shadow 0.3s;
+}
+
+.btn-white-box-shadow:hover {
+	box-shadow: var(--box-shadow-hover-2);
+}
+
+.btn-green-1 {
+	background-color: var(--btnc-1);
+
+	border: var(--border-2);
+	border-radius: var(--br-8px);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 12px 32px;
+
+	color: var(--fc-2);
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: -0.32px;
+
+	cursor: pointer;
+
+	transition: border 0.3s, color 0.3s, background-color 0.3s;
+}
+.btn-green-1:hover {
+	background-color: var(--btnc-2);
+	color: var(--fc-1);
+	border: var(--border-1);
+}
+
+.icon {
+	border: var(--border-1);
+	border-radius: var(--br-10px);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 72px;
+	height: 72px;
+
+	box-shadow: var(--box-shadow-2);
+}
+
+.icon-white {
+	background-color: var(--ic-1);
+}
+.icon-white svg {
+	fill: var(--ic-2);
+
+	width: 50%;
+	height: 50%;
+}
+
+.icon-green {
+	background-color: var(--ic-2);
+}
+.icon-green svg {
+	fill: var(--ic-1);
+
+	width: 50%;
+	height: 50%;
+}
+
+.icon-circle {
+	border: var(--border-1);
+	border-radius: var(--br-50p);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 48px;
+	height: 48px;
+
+	box-shadow: var(--box-shadow-1);
+}
+.icon-circle svg {
+	fill: var(--ic-1);
+
+	width: 50%;
+	height: 50%;
+}
+
+/*======================GLOBAL STYLES======================*/
