@@ -336,42 +336,42 @@ body {
 .bgc-2 {
 	background-color: var(--bgc-2);
 }
-/* .bgc-3 {
-	color: var(--bgc-3);
-} */
+.bgc-3 {
+	background-color: var(--bgc-3);
+}
 /* .bgc-4 {
-	color: var(--bgc-4);
+	background-color: var(--bgc-4);
 } */
 /* .bgc-5 {
-	color: var(--bgc-5);
+	background-color: var(--bgc-5);
 } */
 /* .bgc-6 {
-	color: var(--bgc-6);
+	background-color: var(--bgc-6);
 } */
 /* .bgc-7 {
-	color: var(--bgc-7);
+	background-color: var(--bgc-7);
 } */
 /* .bgc-8 {
-	color: var(--bgc-8);
+	background-color: var(--bgc-8);
 } */
 /* .bgc-9 {
-	color: var(--bgc-9);
+	background-color: var(--bgc-9);
 } */
 
-.bgc-hover-1 {
+/* .bgc-hover-1 {
 	background-color: var(--bgc-hover-1);
-}
-.bgc-hover-2 {
+} */
+/* .bgc-hover-2 {
 	background-color: var(--bgc-hover-2);
-}
+} */
 /* .bgc-hover-3 {
-	color: var(--bgc-hover-3);
+	background-color: var(--bgc-hover-3);
 } */
 /* .bgc-hover-4 {
-	color: var(--bgc-hover-4);
+	background-color: var(--bgc-hover-4);
 } */
 /* .bgc-hover-5 {
-	color: var(--bgc-hover-5);
+	background-color: var(--bgc-hover-5);
 } */
 
 /*-----BORDER COLOR-----*/

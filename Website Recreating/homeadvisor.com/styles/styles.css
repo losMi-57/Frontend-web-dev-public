@@ -184,9 +184,9 @@ li {
 	--fc-hover-7: #1e2533;
 
 	/*-----BACKGROUND COLOR-----*/
-	--bgc-1: #013e39ff;
-	--bgc-2: #c9fec6ff;
-	/* --bgc-3: #fff; */
+	--bgc-1: #f7f7f7ff;
+	--bgc-2: #eaeaeaff;
+	--bgc-3: #1e2533ff;
 	/* --bgc-4: #fff; */
 	/* --bgc-5: #fff; */
 	/* --bgc-6: #fff; */
@@ -195,8 +195,8 @@ li {
 	/* --bgc-9: #fff; */
 	/* --bgc-10: #fff; */
 
-	--bgc-hover-1: #3f8882;
-	--bgc-hover-2: #0f680b;
+	/* --bgc-hover-1: #3f8882; */
+	/* --bgc-hover-2: #0f680b; */
 	/* --bgc-hover-3: #fff; */
 	/* --bgc-hover-4: #fff; */
 	/* --bgc-hover-5: #fff; */
