@@ -166,17 +166,22 @@ li {
 /*=========COLOR PALETTE=========*/
 :root {
 	/*-----FONT COLOR-----*/
-	--fc-1: #013e39ff;
-	--fc-2: #c9fec6ff;
-	/* --fc-3: #fff; */
-	/* --fc-4: #fff; */
-	/* --fc-5: #fff; */
+	--fc-1: #fff;
+	--fc-2: #070441;
+	--fc-3: #3f6eed;
+	--fc-4: #2e2e2e;
+	--fc-5: #1e2533;
+	--fc-6: #333;
+	--fc-7: #666;
+	--fc-8: #999;
+	--fc-9: #3d4549;
 
-	--fc-hover-1: #23743e;
-	--fc-hover-2: #43c9a1;
-	/* --fc-hover-3: #fff; */
+	/* --fc-hover-1: #23743e; */
+	/* --fc-hover-2: #43c9a1; */
+	--fc-hover-3: #2f58ca;
 	/* --fc-hover-4: #fff; */
 	/* --fc-hover-5: #fff; */
+	--fc-hover-7: #1e2533;
 
 	/*-----BACKGROUND COLOR-----*/
 	--bgc-1: #013e39ff;
