@@ -316,8 +316,11 @@ body {
 /* .fc-hover-5 {
 	color: var(--fc-hover-5);
 } */
-.fc-hover-7 {
-	color: var(--fc-hover-7);
+.fc-hover-7_1 {
+	color: var(--fc-hover-7_1);
+}
+.fc-hover-7_2 {
+	color: var(--fc-hover-7_2);
 }
 
 /*-----BACKGROUND COLOR-----*/
@@ -392,9 +395,9 @@ body {
 .btnc-2 {
 	background-color: var(--btnc-2);
 }
-/* .btnc-3 {
+.btnc-3 {
 	background-color: var(--btnc-3);
-} */
+}
 /* .btnc-4 {
 	background-color: var(--btnc-4);
 } */
@@ -408,9 +411,9 @@ body {
 .btnc-hover-2 {
 	background-color: var(--btnc-hover-2);
 }
-/* .btnc-hover-3 {
+.btnc-hover-3 {
 	background-color: var(--btnc-hover-3);
-} */
+}
 /* .btnc-hover-4 {
 	background-color: var(--btnc-hover-4);
 } */

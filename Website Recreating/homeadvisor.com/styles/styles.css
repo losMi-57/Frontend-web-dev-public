@@ -181,7 +181,8 @@ li {
 	--fc-hover-3: #2f58ca;
 	/* --fc-hover-4: #fff; */
 	/* --fc-hover-5: #fff; */
-	--fc-hover-7: #1e2533;
+	--fc-hover-7_1: #1e2533;
+	--fc-hover-7_2: #2e2e2e;
 
 	/*-----BACKGROUND COLOR-----*/
 	--bgc-1: #f7f7f7ff;
@@ -202,15 +203,17 @@ li {
 	/* --bgc-hover-5: #fff; */
 
 	/*-----BUTTON COLOR-----*/
-	--btnc-1: #013e39ff;
-	--btnc-2: #c9fec6ff;
-	/* --btnc-3: #fff; */
+	--btnc-1: #f7f7f7ff;
+	--btnc-2: #eaeaeaff;
+	--btnc-3: #ff5532ff;
+
 	/* --btnc-4: #fff; */
 	/* --btnc-5: #fff; */
 
-	--btnc-hover-1: #013e1a;
-	--btnc-hover-2: #ecc6fe;
-	/* --btnc-hover-3: #fff; */
+	--btnc-hover-1: #0000001a;
+	--btnc-hover-2: #2f58caff;
+	--btnc-hover-3: #e64c2eff;
+
 	/* --btnc-hover-4: #fff; */
 	/* --btnc-hover-5: #fff; */
 
