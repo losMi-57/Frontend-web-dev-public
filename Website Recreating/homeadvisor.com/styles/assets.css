@@ -279,31 +279,46 @@ body {
 .fc-2 {
 	color: var(--fc-2);
 }
-/* .fc-3 {
+.fc-3 {
 	color: var(--fc-3);
-} */
-/* .fc-4 {
+}
+.fc-4 {
 	color: var(--fc-4);
-} */
-/* .fc-5 {
+}
+.fc-5 {
 	color: var(--fc-5);
-} */
+}
+.fc-6 {
+	color: var(--fc-6);
+}
+.fc-7 {
+	color: var(--fc-7);
+}
+.fc-8 {
+	color: var(--fc-8);
+}
+.fc-9 {
+	color: var(--fc-9);
+}
 
-.fc-hover-1 {
+/* .fc-hover-1 {
 	color: var(--fc-hover-1);
-}
-.fc-hover-2 {
-	color: var(--fc-hover-2);
-}
-/* .fc-hover-3 {
-	color: var(--fc-hov-3);
 } */
+/* .fc-hover-2 {
+	color: var(--fc-hover-2);
+} */
+.fc-hover-3 {
+	color: var(--fc-hover-3);
+}
 /* .fc-hover-4 {
-	color: var(--fc-hov-4);
+	color: var(--fc-hover-4);
 } */
 /* .fc-hover-5 {
-	color: var(--fc-hov-5);
+	color: var(--fc-hover-5);
 } */
+.fc-hover-7 {
+	color: var(--fc-hover-7);
+}
 
 /*-----BACKGROUND COLOR-----*/
 .bgc-box {
