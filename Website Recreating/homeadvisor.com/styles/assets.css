@@ -438,19 +438,28 @@ body {
 .ic-2 {
 	fill: var(--ic-2);
 }
-/* .ic-3 {
+.ic-3 {
 	fill: var(--ic-3);
-} */
-/* .ic-4 {
-	fill: var(--ic-4);
-} */
-/* .ic-5 {
-	fill: var(--ic-5);
-} */
-
-.ic-hover-1 {
-	fill: var(--ic-hover-1);
 }
+.ic-4 {
+	fill: var(--ic-4);
+}
+.ic-5 {
+	fill: var(--ic-5);
+}
+.ic-6 {
+	fill: var(--ic-6);
+}
+.ic-7 {
+	fill: var(--ic-7);
+}
+.ic-8 {
+	fill: var(--ic-8);
+}
+
+/* .ic-hover-1 {
+	fill: var(--ic-hover-1);
+} */
 .ic-hover-2 {
 	fill: var(--ic-hover-2);
 }

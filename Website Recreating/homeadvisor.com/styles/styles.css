@@ -218,14 +218,17 @@ li {
 	/* --btnc-hover-5: #fff; */
 
 	/*-----ICON COLOR-----*/
-	--ic-1: #013e39ff;
-	--ic-2: #c9fec6ff;
-	/* --ic-3: #fff; */
-	/* --ic-4: #fff; */
-	/* --ic-5: #fff; */
+	--ic-1: #999;
+	--ic-2: #666;
+	--ic-3: #070441;
+	--ic-4: #ff6153;
+	--ic-5: #ff5532;
+	--ic-6: #3f6eed;
+	--ic-7: #333;
+	--ic-8: #fff;
 
-	--ic-hover-1: #706a1b;
-	--ic-hover-2: #11790b;
+	/* --ic-hover-1: #706a1b; */
+	--ic-hover-2: #2e2e2e;
 	/* --ic-hover-3: #fff; */
 	/* --ic-hover-4: #fff; */
 	/* --ic-hover-5: #fff; */
