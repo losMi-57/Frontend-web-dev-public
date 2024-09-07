@@ -276,6 +276,7 @@ li {
 	--br-32px: 32px;
 	--br-44px: 44px;
 	--br-50p: 50%;
+	--br-100p: 100%;
 }
 /*======================OTHER ASSETS======================*/
 
@@ -353,58 +354,33 @@ li {
 	border: var(--border-11);
 }
 
-.icon {
-	border: var(--border-1);
-	border-radius: var(--br-10px);
+.projects-icon {
+	background-color: var(--ic-8);
+	border-radius: var(--br-100p);
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	width: 72px;
-	height: 72px;
+	width: 80px;
+	height: 80px;
 
-	box-shadow: var(--box-shadow-2);
+	box-shadow: #0000001a 0px 4px 15px -4px;
+
+	cursor: pointer;
+
+	transition: all 0.5s ease;
 }
 
-.icon-white {
-	background-color: var(--ic-1);
+.projects-icon svg {
+	fill: var(--ic-3);
+
+	width: 42%;
 }
-.icon-white svg {
-	fill: var(--ic-2);
+.projects-icon:hover {
+	transform: translateY(-10px);
 
-	width: 50%;
-	height: 50%;
-}
-
-.icon-green {
-	background-color: var(--ic-2);
-}
-.icon-green svg {
-	fill: var(--ic-1);
-
-	width: 50%;
-	height: 50%;
-}
-
-.icon-circle {
-	border: var(--border-1);
-	border-radius: var(--br-50p);
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 48px;
-	height: 48px;
-
-	box-shadow: var(--box-shadow-1);
-}
-.icon-circle svg {
-	fill: var(--ic-1);
-
-	width: 50%;
-	height: 50%;
+	box-shadow: #0000001a 0px 20px 15px -4px;
 }
 
 /*======================GLOBAL STYLES======================*/
