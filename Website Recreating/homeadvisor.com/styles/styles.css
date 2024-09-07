@@ -249,14 +249,18 @@ li {
 
 :root {
 	/*-----BORDER-----*/
-	--border-1: 3px solid #013e39ff;
-	--border-2: 6px ridge #c9fec6ff;
-	/* --border-3: 1px solid #000; */
-	/* --border-4: 1px solid #000; */
-	/* --border-5: 1px solid #000; */
+	--border-1: 1px solid #dbdbdb;
+	--border-2: 1px solid #333;
+	--border-3: 1px solid #000;
+	--border-4: 1px solid #eaeaea;
+	--border-5: 1px solid #ccc;
+	--border-6: 1px solid #2e2e2e;
+	--border-7: 1px solid #3f6eed;
+	--border-8: 1px solid #2f58ca;
+	--border-9: 2px solid #010101;
 
-	--border-hover-1: 4px dotted #1da59a;
-	--border-hover-2: 5px dashed #fedbc6;
+	/* --border-hover-1: 4px dotted #1da59a;*/
+	/* --border-hover-2: 5px dashed #fedbc6; */
 	/* --border-hover-3: #fff; */
 	/* --border-hover-4: #fff; */
 	/* --border-hover-5: #fff; */

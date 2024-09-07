@@ -490,22 +490,34 @@ body {
 .border-2 {
 	border: var(--border-2);
 }
-/* .border-3 {
+.border-3 {
 	border: var(--border-3);
-} */
-/* .border-4 {
+}
+.border-4 {
 	border: var(--border-4);
-} */
-/* .border-5 {
+}
+.border-5 {
 	border: var(--border-5);
-} */
+}
+.border-6 {
+	border: var(--border-6);
+}
+.border-7 {
+	border: var(--border-7);
+}
+.border-8 {
+	border: var(--border-8);
+}
+.border-9 {
+	border: var(--border-9);
+}
 
-.border-hover-1 {
+/* .border-hover-1 {
 	border: var(--border-hover-1);
-}
-.border-hover-2 {
+} */
+/* .border-hover-2 {
 	border: var(--border-hover-2);
-}
+} */
 /* .border-hover-3 {
 	border: var(--border-3)-hover;
 } */
