@@ -188,7 +188,7 @@ li {
 	--bgc-1: #f7f7f7ff;
 	--bgc-2: #eaeaeaff;
 	--bgc-3: #1e2533ff;
-	/* --bgc-4: #fff; */
+	--bgc-4: #fff;
 	/* --bgc-5: #fff; */
 	/* --bgc-6: #fff; */
 	/* --bgc-7: #fff; */
@@ -258,6 +258,8 @@ li {
 	--border-7: 1px solid #3f6eed;
 	--border-8: 1px solid #2f58ca;
 	--border-9: 2px solid #010101;
+	--border-10: 2px solid #3f6eed;
+	--border-11: 2px solid #2f58ca;
 
 	/* --border-hover-1: 4px dotted #1da59a;*/
 	/* --border-hover-2: 5px dashed #fedbc6; */
@@ -271,59 +273,84 @@ li {
 	--br-6px: 6px;
 	--br-8px: 8px;
 	--br-10px: 10px;
+	--br-32px: 32px;
 	--br-44px: 44px;
 	--br-50p: 50%;
 }
 /*======================OTHER ASSETS======================*/
 
-.btn-white-box-shadow {
-	border: var(--border-1);
-	border-radius: var(--br-6px);
-
-	box-shadow: var(--box-shadow-1);
-
+.btn-orange-1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	padding: 14px;
+	width: 121px;
+	height: 56px;
 
-	cursor: pointer;
-
-	transition: box-shadow 0.3s;
-}
-
-.btn-white-box-shadow:hover {
-	box-shadow: var(--box-shadow-hover-2);
-}
-
-.btn-green-1 {
-	background-color: var(--btnc-1);
-
-	border: var(--border-2);
-	border-radius: var(--br-8px);
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	padding: 12px 32px;
-
-	color: var(--fc-2);
-
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 26px;
-	letter-spacing: -0.32px;
-
-	cursor: pointer;
-
-	transition: border 0.3s, color 0.3s, background-color 0.3s;
-}
-.btn-green-1:hover {
-	background-color: var(--btnc-2);
 	color: var(--fc-1);
-	border: var(--border-1);
+	background-color: var(--btnc-3);
+
+	border-radius: var(--br-32px);
+
+	font-family: "Sharp Sans";
+	font-size: 1rem;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+
+.btn-orange-1:hover {
+	background-color: var(--btnc-hover-3);
+}
+
+.btn-blue-1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 121px;
+	height: 56px;
+
+	color: var(--fc-3);
+	background-color: #fff;
+
+	border: var(--border-7);
+	border-radius: var(--br-32px);
+
+	font-family: "Sharp Sans";
+	font-size: 1rem;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+.btn-blue-1:hover {
+	background-color: var(--btnc-hover-2);
+	color: var(--fc-1);
+}
+
+.btn-blue-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 121px;
+	height: 56px;
+
+	color: var(--fc-3);
+	background-color: var(--btnc-2);
+
+	border: var(--border-10);
+	border-radius: var(--br-32px);
+
+	font-family: "Sharp Sans";
+	font-size: 1rem;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+.btn-blue-2:hover {
+	color: var(--fc-hover-3);
+	border: var(--border-11);
 }
 
 .icon {
