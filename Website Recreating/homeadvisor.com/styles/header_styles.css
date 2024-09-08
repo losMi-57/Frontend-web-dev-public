@@ -1,8 +1,56 @@
-/*
-@media screen and (min-width: 481px) {} Phones
-@media screen and (min-width: 769px) {} Tablets
-@media screen and (min-width: 1025px) {} Larger tablets
-@media screen and (min-width: 1921px) {} Up to FHD monitors
-@media screen and (min-width: 7681px) {} Up to 8k monitors
-*/
+.header-mobile {
+	background-color: var(--bgc-4);
 
+	display: flex;
+	justify-content: space-between;
+
+	height: 50px;
+	width: 100%;
+
+	padding: 10px 20px;
+}
+.header-mobile-menu-wrapper {
+	background-color: red;
+
+	position: absolute;
+
+	top: 50px;
+   left: 0;
+}
+.header-mobile-title-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+}
+.header-mobile-title-img svg {
+	width: 200px;
+}
+.header-mobile-search {
+	height: 100%;
+
+	aspect-ratio: 1/1;
+}
+.header-mobile-search-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+}
+.header-mobile-search-icon svg {
+	height: 80%;
+}
+
+/* Phones */
+@media screen and (min-width: 480px) {
+}
+/* Tablets */
+/* @media screen and (min-width: 768px) {}  */
+/* Larger tablets */
+/* @media screen and (min-width: 1024px) {}  */
+/* Up to FHD monitors */
+/* @media screen and (min-width: 1920px) {}  */
+/* Up to 8k monitors */
+/* @media screen and (min-width: 7680px) {}  */
