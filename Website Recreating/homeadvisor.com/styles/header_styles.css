@@ -3,18 +3,78 @@
 	display: none;
 }
 .header-mobile-menu-wrapper {
-	background-color: red;
+	background-color: var(--bgc-4);
 
 	width: 100%;
+	height: calc(100vh - 50px);
+
+	transform: translateY(-100%) translateY(50px);
 
 	position: absolute;
-	transform: translateY(50px);
 	left: 0;
 
 	transition: transform 0.2s ease;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.header-mobile-menu {
+	background-color: var(--bgc-4);
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 12px 24px;
+}
+.header-mobile-menu-links {
+	padding: 12px 0;
+
+	font-size: 1.125rem;
+	color: var(--fc-3);
+}
+.header-mobile-menu-links-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	cursor: pointer;
+}
+.header-mobile-menu-links-nav svg {
+	height: 28px;
+}
+.header-mobile-menu-appstore {
+	background-color: var(--bgc-1);
+
+	height: 150px;
+	width: 100%;
+
+	padding: 24px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+.header-mobile-menu-appstore h5 {
+	font-size: 1rem;
+	font-weight: 500;
+
+	color: var(--fc-6);
+}
+.header-mobile-menu-appstore-links {
+	display: flex;
+	gap: 10px;
+}
+.header-mobile-menu-appstore-links a {
+	text-decoration: none;
+}
+.header-mobile-menu-appstore-links svg {
+	height: 36px;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile-menu-wrapper {
-	transform: translateY(-100%) translateY(50px);
+	transform: translateY(50px);
 }
 
 .header-mobile {
@@ -27,6 +87,9 @@
 	width: 100%;
 
 	padding: 10px 20px;
+
+	border-bottom: 1px solid var(--border-2);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
 }
 .header-mobile-menu-btn-icon,
 .header-mobile-title-img,
@@ -64,7 +127,7 @@
 }
 
 .header-mobile-menu-btn-icon .line-1 {
-	top: 5px;
+	top: 9px;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-1 {
 	width: 27px;
@@ -77,7 +140,7 @@
 }
 
 .header-mobile-menu-btn-icon .line-3 {
-	bottom: 5px;
+	bottom: 9px;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-3 {
 	width: 27px;
