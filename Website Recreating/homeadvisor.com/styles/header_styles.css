@@ -38,7 +38,7 @@
 	color: var(--fc-3);
 }
 .header-mobile-menu-nav-toggle {
-	/* display: none; */
+	display: none;
 	z-index: 15;
 }
 .header-mobile-menu-links-nav {
@@ -58,18 +58,26 @@
 	width: 100%;
 	height: calc(100vh - 50px);
 
+	padding: 12px 0 0 0;
+
+	overflow-y: scroll;
+
 	transition: transform 0.2s ease;
 
 	z-index: 10;
 }
-
-.header-menu-links-nav-page-backP
-
+.header-mobile-menu-links-nav-page-content {
+	padding: 12px 24px;
+}
 
 #header-mobile-menu-nav-toggle-1:checked ~ .header-mobile-menu-links-nav-page-1,
-#header-mobile-menu-nav-toggle-2:checked ~ .header-mobile-menu-links-nav-page-2 {
+#header-mobile-menu-nav-toggle-2:checked ~ .header-mobile-menu-links-nav-page-2,
+#header-mobile-menu-nav-toggle-3:checked ~ .header-mobile-menu-links-nav-page-3,
+#header-mobile-menu-nav-toggle-4:checked ~ .header-mobile-menu-links-nav-page-4,
+#header-mobile-menu-nav-toggle-5:checked ~ .header-mobile-menu-links-nav-page-5 {
 	transform: translateX(-24px);
 }
+
 .header-mobile-menu-links-nav svg {
 	height: 28px;
 	flex-shrink: 0;
@@ -78,6 +86,30 @@
 .header-mobile-menu-links-nav:hover svg {
 	transform: translateX(2px);
 }
+
+.header-menu-links-nav-page-back {
+	color: var(--fc-3);
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-left: 4px;
+	padding: 4px 5px 4px 0;
+
+	cursor: pointer;
+}
+
+.header-menu-links-nav-page-back svg {
+	height: 20px;
+	flex-shrink: 0;
+	rotate: 180deg;
+	transition: transform 0.2s ease;
+}
+.header-menu-links-nav-page-back:hover svg {
+	transform: translateX(1px);
+}
+
 .header-mobile-menu-appstore {
 	background-color: var(--bgc-1);
 
