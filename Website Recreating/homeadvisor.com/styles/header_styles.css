@@ -277,6 +277,7 @@
 
 .header-mobile-menu-btn-icon {
 	flex-direction: column;
+	flex-shrink: 0;
 
 	height: 100%;
 	width: 20px;
@@ -295,15 +296,15 @@
 	width: 20px;
 	height: 2px;
 
-	transition: width 0.2s linear, top 0.2s linear, bottom 0.2s linear, rotate 0.2s linear, background-color 0.2s linear;
+	transition: width 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out, rotate 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .header-mobile-menu-btn-icon .line-1 {
 	top: 9px;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-1 {
-	width: 27px;
-	top: 14px;
+	width: 28px;
+	top: 13px;
 	rotate: 45deg;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-2 {
@@ -315,7 +316,7 @@
 	bottom: 9px;
 }
 #header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-3 {
-	width: 27px;
+	width: 28px;
 	bottom: 14px;
 	rotate: -45deg;
 }
@@ -334,6 +335,163 @@
 .header-mobile-search-icon svg {
 	height: 80%;
 }
+.header-desktop {
+	background-color: var(--bgc-1);
+	border: var(--border-5);
+
+	height: 70px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	padding: 17px 40px 10px 40px;
+}
+
+.header-desktop-title-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-desktop-title-img svg {
+	width: 320px;
+}
+
+.header-desktop-title-img,
+.header-desktop-links-wrapper,
+.header-desktop-link,
+.header-desktop-search,
+.header-desktop-categories-toggle-btn {
+	height: 100%;
+}
+
+.header-desktop-links-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-desktop-categories-checkbox {
+	display: none;
+}
+.header-desktop-link {
+	color: var(--fc-8);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 15px;
+
+	border-radius: 8px;
+
+	cursor: pointer;
+
+	transition: background-color 0.2s ease-in-out;
+}
+.header-desktop-link:hover {
+	background-color: #e0e0e0;
+}
+.header-desktop-search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 270px;
+	height: calc(100% - 2px);
+
+	margin: 20px 10px;
+	padding: 0 10px;
+
+	border: 0;
+	outline: var(--border-5);
+	border-radius: 8px;
+}
+.header-desktop-search:focus {
+	outline: var(--border-9);
+}
+.header-desktop-search::placeholder {
+	color: #ccc;
+	font-size: 0.875rem;
+}
+
+.header-desktop-categories-toggle-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+
+	border-radius: 8px;
+
+	cursor: pointer;
+	user-select: none;
+
+	aspect-ratio: 1/1;
+
+	transition: background-color 0.3s ease-in-out;
+}
+#header-desktop-categories-checkbox:checked ~ .header-desktop-categories-toggle-btn {
+	background-color: #e0e0e0;
+}
+
+.header-desktop-categories-lines {
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* border: 1px solid black; */
+
+	aspect-ratio: 1/1;
+}
+
+.header-desktop-categories-line {
+	background-color: var(--fc-8);
+
+	position: absolute;
+
+	width: 4px;
+	height: 4px;
+
+	border-radius: 4px;
+
+	transition: width 0.3s ease-in-out, height 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out, rotate 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.header-desktop-categories-lines .line-1 {
+	top: 0;
+}
+#header-desktop-categories-checkbox:checked ~ .header-desktop-categories-toggle-btn .line-1 {
+	width: 29px;
+	height: 2px;
+
+	top: calc(50% - 1px);
+
+	rotate: 45deg;
+
+	border-radius: 2px;
+}
+
+#header-desktop-categories-checkbox:checked ~ .header-desktop-categories-toggle-btn .line-2 {
+	background-color: transparent;
+
+	border-radius: 2px;
+}
+.header-desktop-categories-lines .line-3 {
+	bottom: 0;
+}
+#header-desktop-categories-checkbox:checked ~ .header-desktop-categories-toggle-btn .line-3 {
+	width: 29px;
+	height: 2px;
+
+	bottom: calc(50% - 1px);
+
+	rotate: -45deg;
+
+	border-radius: 2px;
+}
 
 /* Phones */
 @media screen and (max-width: 481px) {
@@ -346,6 +504,9 @@
 	.header-mobile-menu-wrapper,
 	.header-mobile {
 		display: flex;
+	}
+	.header-desktop {
+		display: none;
 	}
 }
 /* Up to FHD monitors */
