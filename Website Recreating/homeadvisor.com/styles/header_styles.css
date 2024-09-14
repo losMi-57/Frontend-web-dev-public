@@ -263,7 +263,7 @@
 
 	overflow: hidden;
 }
-.header-mobile-menu-btn-icon,
+.header-mobile-menu-btn,
 .header-mobile-title-img,
 .header-mobile-search-icon {
 	display: flex;
@@ -275,21 +275,38 @@
 	z-index: 10;
 }
 
-.header-mobile-menu-btn-icon {
+.header-mobile-menu-btn {
 	flex-direction: column;
 	flex-shrink: 0;
 
 	height: 100%;
-	width: 20px;
 
 	margin: auto 0;
 
 	cursor: pointer;
 
 	/* outline: 1px solid black; */
-}
 
-.header-mobile-menu-btn-icon .line {
+	aspect-ratio: 1/1;
+}
+.header-mobile-menu-btn-lines {
+	height: 12px;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* border: 1px solid black; */
+
+	/* aspect-ratio: 1/1; */
+
+	transition: height 0.3s ease-in-out;
+}
+#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-lines {
+	height: 20px;
+}
+.header-mobile-menu-btn-line {
 	position: absolute;
 
 	background-color: var(--ic-3);
@@ -299,25 +316,25 @@
 	transition: width 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out, rotate 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.header-mobile-menu-btn-icon .line-1 {
-	top: 9px;
+.header-mobile-menu-btn-lines .line-1 {
+	top: 0;
 }
-#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-1 {
-	width: 28px;
-	top: 13px;
+#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-lines .line-1 {
+	width: 27px;
+	top: calc(50% - 1px);
 	rotate: 45deg;
 }
-#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-2 {
+#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-lines .line-2 {
 	width: 0px;
 	background-color: transparent;
 }
 
-.header-mobile-menu-btn-icon .line-3 {
-	bottom: 9px;
+.header-mobile-menu-btn-lines .line-3 {
+	bottom: 0px;
 }
-#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-icon .line-3 {
-	width: 28px;
-	bottom: 14px;
+#header-mobile-menu-btn-checkbox:checked ~ .header-mobile .header-mobile-menu-btn-lines .line-3 {
+	width: 27px;
+	bottom: calc(50% - 1px);
 	rotate: -45deg;
 }
 .header-mobile-title-img {
