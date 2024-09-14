@@ -50,6 +50,7 @@
 }
 .header-mobile-menu-links-nav-page {
 	background-color: var(--bgc-4);
+	box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.45);
 
 	position: absolute;
 	top: 0;
@@ -62,7 +63,7 @@
 
 	overflow-y: scroll;
 
-	transition: transform 0.2s ease;
+	transition: transform 0.3s ease-in-out;
 
 	z-index: 10;
 }
