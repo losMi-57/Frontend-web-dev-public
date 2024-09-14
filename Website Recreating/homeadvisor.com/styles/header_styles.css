@@ -139,10 +139,12 @@
 	color: var(--fc-hover-7_1);
 }
 .header-mobile-menu-links-nav-page-link-all {
+	color: var(--fc-3);
+
 	padding: 14px 0;
 }
 .header-mobile-menu-links-nav-page-link-all:hover {
-	color: var(--fc-7);
+	color: var(--fc-3);
 }
 
 .header-mobile-menu-links-nav svg {
